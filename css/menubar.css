@@ -1,3 +1,7 @@
+:root{
+	--yellow: #FFFFFF;
+}
+
 .wrapper {
     display: flex;
     width: 100%;
@@ -109,4 +113,58 @@ ul ul a {
 
 #title {
     padding: 10px;
+}
+
+.leftRightMargin{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.btn.btn-primary {
+    background: var(--yellow);
+    border: 1px solid #0275d8;
+    color: #0275d8;
+    background: #FAEC29;
+    background: -moz-linear-gradient(-45deg, var(--yellow) 0%, var(--yellow) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, var(--yellow)), color-stop(100%, var(--yellow)));
+    background: -webkit-linear-gradient(-45deg, var(--yellow) 0%, var(--yellow) 100%);
+    background: -o-linear-gradient(-45deg, var(--yellow) 0%, var(--yellow) 100%);
+    background: -ms-linear-gradient(-45deg, var(--yellow) 0%, var(--yellow) 100%);
+    background: -webkit-linear-gradient(315deg, var(--yellow) 0%, var(--yellow) 100%);
+    background: -o-linear-gradient(315deg, var(--yellow) 0%, var(--yellow) 100%);
+    background: linear-gradient(135deg, var(--yellow) 0%, var(--yellow) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='var(--yellow)', endColorstr='var(--yellow)', GradientType=1);
+}
+
+.btn.btn-primary:hover {
+    border: 1px solid #0275d8;
+    background: #0275d8;
+    color: #fff;
+}
+
+.sidebarBtn{
+	color: #FFFFFF;
+}
+
+.sidebarBtn:hover{
+	color: #FFFFFF;
+}
+
+.sidebarBtn:active{
+	animation:spin 0.5s;
+}
+
+@keyframes spin { 
+    100% { 
+        transform:rotate(180deg); 
+    } 
+}
+
+.personFill{
+	color: #FFFFFF;
+	margin-left: 15px;
+}
+
+.personFill:hover{
+	color: #0275d8;
 }
