@@ -1,14 +1,9 @@
-:root{
-	--yellow: #FFFFFF;
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
+:root {
+    --yellow: #FFFFFF;
 }
 
 #sidebar {
-    width: 360px;
+    width: 320px;
     top: 0;
     left: 0px;
     height: 100vh;
@@ -17,10 +12,12 @@
     color: #fff;
     transition: all 0.3s;
     padding: 16px;
+    padding-top: 60px;
+    position: fixed;
 }
 
 #sidebar.active {
-    margin-left: -360px;
+    margin-left: -320px;
 }
 
 a[data-toggle="collapse"] {
@@ -33,15 +30,6 @@ a[data-toggle="collapse"] {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-}
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -360px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
 }
 
 p {
@@ -115,9 +103,9 @@ ul ul a {
     padding: 10px;
 }
 
-.leftRightMargin{
-	margin-left: 5px;
-	margin-right: 5px;
+.leftRightMargin {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .btn.btn-primary {
@@ -142,29 +130,29 @@ ul ul a {
     color: #fff;
 }
 
-.sidebarBtn{
-	color: #FFFFFF;
+.sidebarBtn {
+    color: #FFFFFF;
 }
 
-.sidebarBtn:hover{
-	color: #FFFFFF;
+.sidebarBtn:hover {
+    color: #FFFFFF;
 }
 
-.sidebarBtn:active{
-	animation:spin 0.5s;
+.sidebarBtn:active {
+    animation: spin 0.5s;
 }
 
-@keyframes spin { 
-    100% { 
-        transform:rotate(180deg); 
-    } 
+@keyframes spin {
+    100% {
+        transform: rotate(180deg);
+    }
 }
 
-.personFill{
-	color: #FFFFFF;
-	margin-left: 15px;
+.personFill {
+    color: #FFFFFF;
+    margin-left: 15px;
 }
 
-.personFill:hover{
-	color: #0275d8;
+.personFill:hover {
+    color: #0275d8;
 }
